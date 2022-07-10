@@ -1,0 +1,50 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #393939;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(auto,auto);
+    gap:20px;
+    width:95%;
+    margin:auto;
+}
+
+#main>div{
+    margin-top:10px;
+    height:490px;
+    text-align: center;
+}
+
+#main>div>p+p{
+    color:rgb(230, 14, 14);
+    margin-top: -10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#main>div>h2+p{
+    color:green;
+    margin-top: -15px;
+    font-size: 18px;
+}
+
+#main>div>button{
+    margin-top: -12px;
+    height: 25px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 5px;
+    border:1px solid blue;
+    color: blue;
+    background-color: white;
+}
+
+#main>div>button:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
